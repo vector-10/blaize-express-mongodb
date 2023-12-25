@@ -1,8 +1,11 @@
 {
   "name": "blaize-express-setup",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An npm package designed to setup express.js boiler plate folders and npm starter packages for backend REST API development.",
   "main": "setup.js",
+  "bin": {
+    "blaize-express-setup": "setup.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "node setup.js"
