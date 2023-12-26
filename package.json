@@ -9,9 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["express", "setup", "mongoose", "mongodb"],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-  }
+  "license": "ISC"
 }
