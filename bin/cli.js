@@ -30,38 +30,38 @@ function installPackages(packages) {
   console.log('Packages installed successfully!');
 }
 
-// default setup for the app.js file to be created by default
-function createAppJSFile() {
-  const appJSContent = `
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express();
+// // default setup for the app.js file to be created by default
+// function createAppJSFile() {
+//   const appJSContent = `
+// const express = require('express');
+// const bodyParser = require('body-parser');
+// const app = express();
 
-// Middleware
-app.use(bodyParser.json());
+// // Middleware
+// app.use(bodyParser.json());
 
-// Routes
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
+// // Routes
+// app.get('/', (req, res) => {
+//   res.send('Hello, world!');
+// });
 
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(\`Server running on port \${PORT}\`);
-});
-  `;
+// // Start the server
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => {
+//   console.log(\`Server running on port \${PORT}\`);
+// });
+//   `;
 
-  const appJSPath = path.join(process.cwd(), 'app.js');
-  fs.writeFileSync(appJSPath, appJSContent);
+//   const appJSPath = path.join(process.cwd(), 'app.js');
+//   fs.writeFileSync(appJSPath, appJSContent);
 
-  console.log('app.js file created successfully!');
-}
+//   console.log('app.js file created successfully!');
+// }
 
 
 // Create folders, installs packages and creates an app.js file
 createFolders(foldersToCreate);
 installPackages(packagesToInstall);
-createAppJSFile();
+// createAppJSFile();
 
 console.log('Express API Setup complete!');
