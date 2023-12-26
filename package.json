@@ -1,10 +1,10 @@
 {
-  "name": "blaize-express-setup",
-  "version": "1.0.0",
+  "name": "blaize-express-mongodb",
+  "version": "1.2.0",
   "description": "An npm package designed to setup express.js boiler plate code and npm starter packages for backend development.",
   "main": "index.js",
   "bin": {
-    "blaize-express-setup": "bin/cli.js"
+    "blaize-express-mongodb": "bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
