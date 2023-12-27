@@ -10,6 +10,7 @@ const packagesToInstall = [
   'body-parser',
   'dotenv',
   'morgan',
+  'mongodb',
   'mongoose',
   'jsonwebtoken',
   'cors',
@@ -62,6 +63,6 @@ app.listen(PORT, () => {
 // Create folders, installs packages and creates an app.js file
 createFolders(foldersToCreate);
 installPackages(packagesToInstall);
-// createAppJSFile();
+createAppJSFile();
 
 console.log('Express API Setup complete!');
