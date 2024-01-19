@@ -1,6 +1,6 @@
 {
   "name": "blaize-express-mongodb",
-  "version": "1.7.0",
+  "version": "1.9.0",
   "description": "An npm package designed to setup express.js boiler plate code and npm starter packages for backend development.",
   "main": "index.js",
   "bin": {

@@ -102,8 +102,8 @@ function createSampleController() {
   ` const getSampleData = (req, res) => {
     res.json({ message: " Hello from sample controller " })
 
-    module.exports = { getSampleData }
-  }`
+  }
+  module.exports = { getSampleData }`
 
   createFile('controllers/sampleController.js', sampleControllerContent);
 }
@@ -113,7 +113,7 @@ function createSampleRouter() {
   const sampleRouterContent = 
   `const express = require('express');
    const router = express.Router();
-   const { sampleController } = require('../controllers/sampleController')
+   const { sampleController } = require('../controllers/sampleController');
    
    //Define routes
    router.route('/sample').get(sampleController.getSampleData).post().put().delete()
@@ -151,7 +151,7 @@ function createGitIgnoreFile() {
 
 //function to create dotenv file
 function createDotEnvFile() {
-  const dotEnvContent = `PORT=5000`;
+  const dotEnvContent = `PORT = 5000`;
 
   createFile('.env', dotEnvContent);
 }
